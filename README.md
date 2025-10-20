@@ -1,3 +1,9 @@
+---
+title: Professionally-You
+app_file: app.py
+sdk: gradio
+sdk_version: 5.49.1
+---
 # 🤖 Personal AI Assistant with Gradio & Pushover Integration
 
 [![Python](https://img.shields.io/badge/Python-3.10+-blue?logo=python)](https://www.python.org/)
@@ -33,16 +39,14 @@ cd personal-ai-assistant
 
 ### 2. Create and activate a virtual environment
 ```bash
-python -m venv venv
-source venv/bin/activate      # For Linux/Mac
-venv\Scripts\activate       # For Windows
+uv init     
 ```
 
 ### 3. Install dependencies
 Make sure you have a **`requirements.txt`** file in the root directory, then run:
 
 ```bash
-pip install -r requirements.txt
+uv add install -r requirements.txt
 ```
 
 ---
@@ -65,7 +69,7 @@ pip install -r requirements.txt
 ## 🚀 Running the App
 
 ```bash
-python main.py
+uv run main.py
 ```
 
 Then open the local Gradio link in your browser to start chatting with your AI assistant.
